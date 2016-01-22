@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*
  Knight Bootstrap theme by BootstrapTaste.com
  Theme URI: http://bootstraptaste.com/knight-free-bootstrap-theme/
@@ -98,8 +98,10 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
-	padding:280px 0;
+	background:url(../img/pw_maze_black_2X.png);
+    background-size:cover;
+    background-position: bottom;
+	padding:200px 0;
 }
 .logo{
 	width:130px;
@@ -111,7 +113,7 @@ p{
 	font-weight:400;
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
-	color:#fff;
+	color:#111;
 }
 
 .we-create{
@@ -125,7 +127,7 @@ p{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
 	font-size:14px;
-	color: #bcbcbc;
+	color: #1f1f1f;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin:0 5px 0 0;
@@ -146,8 +148,8 @@ color: #fff;
 
 .link{
 	padding:15px 35px;
-	background:#7cc576;
-	color:#fff !important;
+	background:#111;
+	color:#ffe119 !important;
 	font-size:16px;
 	font-weight:400;
 	font-family: 'Montserrat', sans-serif;
@@ -162,8 +164,10 @@ color: #fff;
 }
 .link:hover {
 	text-decoration:none;
-	color:#7cc576 !important;
-	background:#fff;
+	color:#111 !important;
+	background:#ffe119;
+    border:groove;
+    border-color:black;
 }
 
 .link:active, .link:focus {
@@ -330,18 +334,18 @@ color: #fff;
 	padding:10px 22px;
 	font-size:12px;
 	line-height:20px;
-	color:#222222;
+	color:#222;
 	border-radius:4px;
 	text-transform:uppercase;
 	font-family: 'Montserrat', sans-serif;
-	background:#f7f7f7;
+	background:#ffff37;
 	margin-bottom:5px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	background:#7cc576;
+	background:#ffe119;
 	color:#fff;
 	text-decoration:none;
 }
@@ -372,7 +376,7 @@ color: #fff;
 }
 
 .Portfolio-nav li a.current{
-	background:#7cc576;
+	background:#ffe119;
 	color:#fff;
 	text-decoration:none;
 }
