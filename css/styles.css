@@ -321,23 +321,6 @@ ol {
   color: var(--on-ink);
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.75rem;
-}
-
-.hero .btn:not(.btn-primary) {
-  background: transparent;
-  border-color: rgb(255 255 255 / 22%);
-  color: var(--on-ink);
-}
-
-.hero .btn:not(.btn-primary):hover {
-  background: rgb(255 255 255 / 8%);
-}
-
 @media (max-width: 640px) {
   .hero-inner {
     grid-template-columns: 1fr;
@@ -345,8 +328,7 @@ ol {
     justify-items: center;
   }
 
-  .hero .tags,
-  .hero-actions {
+  .hero .tags {
     justify-content: center;
   }
 }
