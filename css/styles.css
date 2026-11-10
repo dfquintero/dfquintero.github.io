@@ -315,6 +315,13 @@ ol {
   color: var(--on-ink-muted);
 }
 
+.hero-bio {
+  max-width: 60ch;
+  margin: 0 0 1.25rem;
+  color: var(--on-ink-muted);
+  line-height: 1.6;
+}
+
 .hero .tags li {
   background: rgb(255 255 255 / 6%);
   border-color: var(--ink-line);
