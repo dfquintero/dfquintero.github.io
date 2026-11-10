@@ -618,10 +618,20 @@ ol {
   color: #fff;
 }
 
+.project {
+  --type-color: var(--accent);
+}
+
+.project[data-type="web"] { --type-color: #4f46e5; }
+.project[data-type="movil"] { --type-color: #0891b2; }
+.project[data-type="juego"] { --type-color: #db2777; }
+.project[data-type="marca"] { --type-color: #d97706; }
+.project[data-type="hardware"] { --type-color: #16a34a; }
+.project[data-type="seguridad"] { --type-color: #dc2626; }
+
 .project-card {
-  display: flex;
+  position: relative;
   flex: 1;
-  flex-direction: column;
   overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -640,94 +650,67 @@ ol {
   box-shadow: var(--shadow);
 }
 
-.project {
-  --type-color: var(--accent);
-}
-
-.project[data-type="web"] { --type-color: #4f46e5; }
-.project[data-type="movil"] { --type-color: #0891b2; }
-.project[data-type="juego"] { --type-color: #db2777; }
-.project[data-type="marca"] { --type-color: #d97706; }
-.project[data-type="hardware"] { --type-color: #16a34a; }
-.project[data-type="seguridad"] { --type-color: #dc2626; }
-
-.project-media {
-  position: relative;
-  border-bottom: 1px solid var(--border);
-}
-
-.project-media img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+.project-thumb {
   object-fit: cover;
 }
 
 .project-type {
-  position: absolute;
-  top: 0.75rem;
-  left: 0.75rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.3rem 0.75rem 0.3rem 0.6rem;
-  border-radius: 999px;
-  background: rgb(11 18 32 / 78%);
-  backdrop-filter: blur(6px);
-  color: #fff;
-  font-size: 0.75rem;
+  gap: 0.4rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  color: var(--muted);
 }
 
 .project-type::before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--type-color);
-  box-shadow: 0 0 0 3px rgb(255 255 255 / 15%);
-}
-
-.project-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 1.1rem 1.3rem 1.3rem;
-}
-
-.project-client {
-  margin: 0 0 0.2rem;
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--type-color);
 }
 
 .project-body h3 {
-  margin-bottom: 0.35rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.project-client {
+  margin: 0.1rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--type-color);
 }
 
 .project-desc {
-  margin: 0 0 1rem;
+  margin: 0.6rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--muted);
-  font-size: 0.95rem;
 }
 
 .project-meta {
   display: grid;
-  gap: 0.75rem;
-  margin: auto 0 0;
-  padding-top: 1rem;
-  border-top: 1px dashed var(--border);
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+  margin: 0.85rem 0 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-meta > div {
+  display: contents;
 }
 
 .project-meta dt {
-  margin-bottom: 0.3rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -739,24 +722,147 @@ ol {
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .chips li {
-  padding: 0.15rem 0.55rem;
-  border: 1px solid var(--border);
+  padding: 0.05rem 0.45rem;
   border-radius: 6px;
-  background: var(--bg);
+  background: var(--bg-alt);
   font-family: var(--mono);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text);
 }
 
-.todo {
-  font-size: 0.8rem;
-  font-style: italic;
-  color: var(--muted);
-  opacity: 0.8;
+/* Variant A: compact, app-store style */
+.projects--a {
+  --card-w: min(76vw, 300px);
+}
+
+.projects--a .project-card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  column-gap: 0.85rem;
+  padding: 1rem;
+}
+
+.projects--a .project-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.projects--a .project-body {
+  display: contents;
+}
+
+.projects--a .project-type {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+}
+
+.projects--a .project-body h3,
+.projects--a .project-client {
+  grid-column: 2;
+}
+
+.projects--a .project-body h3 {
+  grid-row: 1;
+  align-self: end;
+  padding-right: 5.5rem;
+}
+
+.projects--a .project-client {
+  grid-row: 2;
+  align-self: start;
+}
+
+.projects--a .project-thumb {
+  grid-row: 1 / span 2;
+}
+
+.projects--a .project-desc,
+.projects--a .project-meta {
+  grid-column: 1 / -1;
+}
+
+/* Variant B: poster, full-bleed image */
+.projects--b {
+  --card-w: min(68vw, 250px);
+}
+
+.projects--b .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  isolation: isolate;
+  aspect-ratio: 3 / 4;
+  border: 0;
+  background: var(--ink);
+}
+
+.projects--b .project-thumb {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.projects--b .project-body {
+  padding: 3rem 1rem 1rem;
+  background: linear-gradient(to top, rgb(11 18 32 / 96%) 55%, transparent);
+  color: #fff;
+}
+
+.projects--b .project-type {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgb(11 18 32 / 75%);
+  color: #fff;
+}
+
+.projects--b .project-client {
+  color: #a5b4fc;
+}
+
+.projects--b .project-desc,
+.projects--b .project-meta dt,
+.projects--b .project-meta > div:last-child {
+  display: none;
+}
+
+.projects--b .project-meta {
+  grid-template-columns: 1fr;
+  border-color: rgb(255 255 255 / 12%);
+}
+
+.projects--b .chips li {
+  background: rgb(255 255 255 / 12%);
+  color: #fff;
+}
+
+/* Variant C: minimal, no image */
+.projects--c {
+  --card-w: min(72vw, 270px);
+}
+
+.projects--c .project-card {
+  padding: 1rem 1.1rem;
+  border-top: 3px solid var(--type-color);
+}
+
+.projects--c .project-thumb {
+  display: none;
+}
+
+.projects--c .project-type {
+  margin-bottom: 0.4rem;
 }
 
 /* Dark band (contact) */
