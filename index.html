@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="no-referrer">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#0b1220">
   <title>Diego Quintero — Ingeniería de Sistemas</title>
   <meta name="description" content="Diego Quintero, estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia. Ciberseguridad, desarrollo de software e IoT.">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -17,7 +20,7 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Principal">
-      <a class="nav-brand" href="#inicio">DQ</a>
+      <a class="nav-brand" href="#inicio"><span class="nav-brand-mark" aria-hidden="true">DQ</span><span class="nav-brand-name">Diego Quintero</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
@@ -36,10 +39,10 @@
     <section class="hero" id="inicio">
       <div class="container hero-inner">
         <img class="hero-photo" src="img/profile-placeholder.svg" alt="Foto de Diego Quintero" width="200" height="200">
-        <div>
+        <div class="hero-text">
           <p class="hero-kicker">Hola, soy</p>
           <h1>Diego Quintero</h1>
-          <p class="hero-role">Estudiante de Ingeniería de Sistemas — Universidad Nacional de Colombia</p>
+          <p class="hero-role">Estudiante de Ingeniería de Sistemas y Computación — Universidad Nacional de Colombia</p>
           <ul class="tags" aria-label="Intereses">
             <li>Ciberseguridad</li>
             <li>Desarrollo de software</li>
@@ -98,7 +101,7 @@
         <h2 id="educacion-titulo">Educación</h2>
         <ol class="timeline">
           <li class="timeline-item">
-            <h3>Ingeniería de Sistemas</h3>
+            <h3>Ingeniería de Sistemas y Computación</h3>
             <p class="meta">Universidad Nacional de Colombia · 2019 – 2027 (en curso)</p>
           </li>
           <li class="timeline-item">
@@ -213,7 +216,7 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="contacto" aria-labelledby="contacto-titulo">
+    <section class="section section-dark" id="contacto" aria-labelledby="contacto-titulo">
       <div class="container contact">
         <h2 id="contacto-titulo">Contacto</h2>
         <p>¿Quieres hablar de un proyecto o una oportunidad? Escríbeme por LinkedIn.</p>
