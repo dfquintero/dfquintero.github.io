@@ -142,62 +142,87 @@
 
     <section class="section section-alt" id="proyectos" aria-labelledby="proyectos-titulo">
       <div class="container">
-        <h2 id="proyectos-titulo">Proyectos</h2>
-        <!--
-          Para agregar un proyecto, copia un <li class="project"> y ajusta:
-          imagen en img/projects/ (360x270), título, descripción y etiquetas.
-        -->
-        <ul class="projects">
-          <li class="project">
-            <img src="img/projects/san-mate.png" alt="Logo de San Mate" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>San Mate</h3>
-              <p>Branding y diseño web.</p>
-              <ul class="tags tags-sm"><li>Web</li><li>Branding</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/si-joven.png" alt="Logo de la app Sí Joven" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>Sí Joven App</h3>
-              <p>Aplicación móvil para MinTIC y el programa Colombia Joven de la Presidencia de la República.</p>
-              <ul class="tags tags-sm"><li>Móvil</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/world-qup.png" alt="Ícono de World Qup" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>World Qup</h3>
-              <p>App de resultados de la Copa Mundial de la FIFA.</p>
-              <ul class="tags tags-sm"><li>Móvil</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/siplaft.png" alt="Escudo de SIPLAFT y personaje del juego" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>SIPLAFT | El Juego</h3>
-              <p>Juego web corporativo.</p>
-              <ul class="tags tags-sm"><li>Web</li><li>Juego</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/contac-aliens.png" alt="Personaje alienígena de Contac Aliens" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>Contac Aliens</h3>
-              <p>Juego multiplataforma.</p>
-              <ul class="tags tags-sm"><li>Móvil</li><li>Juego</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/blackberry.png" alt="Apps publicadas en BlackBerry App World" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>Apps BlackBerry</h3>
-              <p>Desarrollo de aplicaciones móviles para BlackBerry App World.</p>
-              <ul class="tags tags-sm"><li>Móvil</li></ul>
-            </div>
-          </li>
-        </ul>
+        <div class="section-head">
+          <h2 id="proyectos-titulo">Proyectos</h2>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-dir="-1" aria-controls="projects-track" aria-label="Proyecto anterior" hidden><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg></button>
+            <button type="button" class="carousel-btn" data-dir="1" aria-controls="projects-track" aria-label="Proyecto siguiente" hidden><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
       </div>
+      <!--
+        Proyectos en orden cronológico (del más antiguo al más reciente).
+        Para agregar uno, copia un <li class="project"> en su posición y ajusta:
+        año, imagen en img/projects/ (360x270), título, descripción y etiquetas.
+      -->
+      <ol class="projects" id="projects-track" tabindex="0" aria-label="Proyectos en orden cronológico">
+        <li class="project">
+          <p class="project-year"><time datetime="20XX">20XX</time></p>
+          <article class="project-card">
+              <img src="img/projects/san-mate.png" alt="Logo de San Mate" width="360" height="270" loading="lazy">
+              <div class="project-body">
+                <h3>San Mate</h3>
+                <p>Branding y diseño web.</p>
+                <ul class="tags tags-sm"><li>Web</li><li>Branding</li></ul>
+              </div>
+          </article>
+        </li>
+        <li class="project">
+          <p class="project-year"><time datetime="20XX">20XX</time></p>
+          <article class="project-card">
+              <img src="img/projects/si-joven.png" alt="Logo de la app Sí Joven" width="360" height="270" loading="lazy">
+              <div class="project-body">
+                <h3>Sí Joven App</h3>
+                <p>Aplicación móvil para MinTIC y el programa Colombia Joven de la Presidencia de la República.</p>
+                <ul class="tags tags-sm"><li>Móvil</li></ul>
+              </div>
+          </article>
+        </li>
+        <li class="project">
+          <p class="project-year"><time datetime="20XX">20XX</time></p>
+          <article class="project-card">
+              <img src="img/projects/world-qup.png" alt="Ícono de World Qup" width="360" height="270" loading="lazy">
+              <div class="project-body">
+                <h3>World Qup</h3>
+                <p>App de resultados de la Copa Mundial de la FIFA.</p>
+                <ul class="tags tags-sm"><li>Móvil</li></ul>
+              </div>
+          </article>
+        </li>
+        <li class="project">
+          <p class="project-year"><time datetime="20XX">20XX</time></p>
+          <article class="project-card">
+              <img src="img/projects/siplaft.png" alt="Escudo de SIPLAFT y personaje del juego" width="360" height="270" loading="lazy">
+              <div class="project-body">
+                <h3>SIPLAFT | El Juego</h3>
+                <p>Juego web corporativo.</p>
+                <ul class="tags tags-sm"><li>Web</li><li>Juego</li></ul>
+              </div>
+          </article>
+        </li>
+        <li class="project">
+          <p class="project-year"><time datetime="20XX">20XX</time></p>
+          <article class="project-card">
+              <img src="img/projects/contac-aliens.png" alt="Personaje alienígena de Contac Aliens" width="360" height="270" loading="lazy">
+              <div class="project-body">
+                <h3>Contac Aliens</h3>
+                <p>Juego multiplataforma.</p>
+                <ul class="tags tags-sm"><li>Móvil</li><li>Juego</li></ul>
+              </div>
+          </article>
+        </li>
+        <li class="project">
+          <p class="project-year"><time datetime="20XX">20XX</time></p>
+          <article class="project-card">
+              <img src="img/projects/blackberry.png" alt="Apps publicadas en BlackBerry App World" width="360" height="270" loading="lazy">
+              <div class="project-body">
+                <h3>Apps BlackBerry</h3>
+                <p>Desarrollo de aplicaciones móviles para BlackBerry App World.</p>
+                <ul class="tags tags-sm"><li>Móvil</li></ul>
+              </div>
+          </article>
+        </li>
+      </ol>
     </section>
 
     <section class="section" id="premios" aria-labelledby="premios-titulo">
