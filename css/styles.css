@@ -378,6 +378,17 @@ ol {
   box-shadow: 0 14px 30px -10px rgb(79 70 229 / 80%);
 }
 
+.result {
+  display: inline-block;
+  margin: 0 0 0.6rem;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
 .meta {
   margin: 0 0 0.5rem;
   color: var(--muted);
