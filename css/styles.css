@@ -557,7 +557,7 @@ ol {
 }
 
 .projects {
-  --card-w: min(68vw, 260px);
+  --card-w: min(76vw, 290px);
   --gap: clamp(1rem, 3vw, 1.5rem);
   position: relative;
   display: flex;
@@ -670,8 +670,8 @@ ol {
 }
 
 .project-body {
-  padding: 3.5rem 1rem 1rem;
-  background: linear-gradient(to top, rgb(11 18 32 / 96%) 55%, rgb(11 18 32 / 0%));
+  padding: 4rem 1.1rem 1.1rem;
+  background: linear-gradient(to top, rgb(11 18 32 / 97%) 60%, rgb(11 18 32 / 0%));
 }
 
 .project-type {
@@ -712,22 +712,34 @@ ol {
   color: #c7d2fe;
 }
 
-.project-desc,
-.project-meta dt {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+.project-desc {
+  margin: 0.5rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: rgb(255 255 255 / 78%);
 }
 
 .project-meta {
   display: grid;
-  gap: 0.35rem;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: 0.35rem 0.6rem;
   margin: 0.75rem 0 0;
   padding-top: 0.75rem;
   border-top: 1px solid rgb(255 255 255 / 12%);
+}
+
+.project-meta > div {
+  display: contents;
+}
+
+.project-meta dt {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 55%);
 }
 
 .project-meta dd {
