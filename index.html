@@ -142,62 +142,199 @@
 
     <section class="section section-alt" id="proyectos" aria-labelledby="proyectos-titulo">
       <div class="container">
-        <h2 id="proyectos-titulo">Proyectos</h2>
-        <!--
-          Para agregar un proyecto, copia un <li class="project"> y ajusta:
-          imagen en img/projects/ (360x270), título, descripción y etiquetas.
-        -->
-        <ul class="projects">
-          <li class="project">
-            <img src="img/projects/san-mate.png" alt="Logo de San Mate" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>San Mate</h3>
-              <p>Branding y diseño web.</p>
-              <ul class="tags tags-sm"><li>Web</li><li>Branding</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/si-joven.png" alt="Logo de la app Sí Joven" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>Sí Joven App</h3>
-              <p>Aplicación móvil para MinTIC y el programa Colombia Joven de la Presidencia de la República.</p>
-              <ul class="tags tags-sm"><li>Móvil</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/world-qup.png" alt="Ícono de World Qup" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>World Qup</h3>
-              <p>App de resultados de la Copa Mundial de la FIFA.</p>
-              <ul class="tags tags-sm"><li>Móvil</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/siplaft.png" alt="Escudo de SIPLAFT y personaje del juego" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>SIPLAFT | El Juego</h3>
-              <p>Juego web corporativo.</p>
-              <ul class="tags tags-sm"><li>Web</li><li>Juego</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/contac-aliens.png" alt="Personaje alienígena de Contac Aliens" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>Contac Aliens</h3>
-              <p>Juego multiplataforma.</p>
-              <ul class="tags tags-sm"><li>Móvil</li><li>Juego</li></ul>
-            </div>
-          </li>
-          <li class="project">
-            <img src="img/projects/blackberry.png" alt="Apps publicadas en BlackBerry App World" width="360" height="270" loading="lazy">
-            <div class="project-body">
-              <h3>Apps BlackBerry</h3>
-              <p>Desarrollo de aplicaciones móviles para BlackBerry App World.</p>
-              <ul class="tags tags-sm"><li>Móvil</li></ul>
-            </div>
-          </li>
-        </ul>
+        <div class="section-head">
+          <h2 id="proyectos-titulo">Proyectos</h2>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-dir="-1" aria-controls="projects-track" aria-label="Proyecto anterior" hidden><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg></button>
+            <button type="button" class="carousel-btn" data-dir="1" aria-controls="projects-track" aria-label="Proyecto siguiente" hidden><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
       </div>
+      <!--
+        Proyectos en orden cronológico (del más antiguo al más reciente).
+        Para agregar uno, copia un <li class="project"> en su posición y ajusta:
+        año, data-type (web, movil, juego, marca, hardware, seguridad), imagen en
+        img/projects/ (360x270), tipo, cliente o "Proyecto personal", título,
+        descripción, tecnologías y plataformas.
+      -->
+      <ol class="projects" id="projects-track" tabindex="0" aria-label="Proyectos en orden cronológico">
+        <li class="project" data-type="marca">
+          <p class="project-year"><time datetime="2009">2009</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/san-mate.png" alt="Logo de San Mate" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">Marca · Web</span>
+              <h3>San Mate</h3>
+              <p class="project-client">Amasijos San Mate</p>
+              <p class="project-desc">Identidad de marca y sitio web.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>WordPress</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>Web</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2013">2013</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/bb-reino-urbano.png" alt="Ícono de la app ReinoUrbano.com" width="360" height="480" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>ReinoUrbano.com</h3>
+              <p class="project-client">Gabriel León</p>
+              <p class="project-desc">App del sitio ReinoUrbano.com.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>BlackBerry WebWorks</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>BlackBerry OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2013">2013</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/bb-alternativa-opinion.png" alt="Ícono de la app AlternativaDeOpinión.com" width="360" height="480" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>AlternativaDeOpinión.com</h3>
+              <p class="project-client">Santiago Rincón</p>
+              <p class="project-desc">App del sitio de opinión AlternativaDeOpinión.com.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>BlackBerry WebWorks</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>BlackBerry OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2013">2013</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/bb-linux.png" alt="Ícono de la app sudo-apt-get-linux" width="360" height="480" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>sudo-apt-get-linux</h3>
+              <p class="project-client">Marco Tobón</p>
+              <p class="project-desc">App del blog sudo-apt-get-linux.blogspot.com.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>BlackBerry WebWorks</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>BlackBerry OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2013">2013</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/bb-caras.png" alt="Ícono de la app DiegoQ Tech Blog" width="360" height="480" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>DiegoQ Tech Blog</h3>
+              <p class="project-client">Proyecto personal</p>
+              <p class="project-desc">App de mi blog de noticias de tecnología.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>BlackBerry WebWorks</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>BlackBerry OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2013">2013</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/bb-perspectiva-social.png" alt="Ícono de la app Perspectiva Social" width="360" height="480" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>Perspectiva Social</h3>
+              <p class="project-client">Sebastian Árias</p>
+              <p class="project-desc">App del blog Perspectiva Social.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>BlackBerry WebWorks</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>BlackBerry OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2013">2013</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/bb-deportes.png" alt="Ícono de la app Resultados Deportivos Col" width="360" height="480" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>Resultados Deportivos Col</h3>
+              <p class="project-client">Proyecto personal</p>
+              <p class="project-desc">App del blog de resultados deportivos de Colombia.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>BlackBerry WebWorks</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>BlackBerry OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2014">2014</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/si-joven.png" alt="Logo de la app Sí Joven" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>Sí Joven App</h3>
+              <p class="project-client">Presidencia · Colombia Joven · MinTIC</p>
+              <p class="project-desc">App del programa Colombia Joven de la Presidencia de la República.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>HTML5</li><li>jQuery Mobile</li><li>JavaScript</li><li>PHP</li><li>API REST</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>Android</li><li>iOS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="movil">
+          <p class="project-year"><time datetime="2014">2014</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/world-qup.png" alt="Ícono de World Qup" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">App móvil</span>
+              <h3>World Qup</h3>
+              <p class="project-client">Proyecto personal</p>
+              <p class="project-desc">Resultados de la Copa Mundial de la FIFA.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>HTML5</li><li>jQuery Mobile</li><li>JavaScript</li><li>API REST</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>Firefox OS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="juego">
+          <p class="project-year"><time datetime="2015">2015</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/siplaft.png" alt="Escudo de SIPLAFT y personaje del juego" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">Videojuego web</span>
+              <h3>SIPLAFT | El Juego</h3>
+              <p class="project-client">Servientrega S.A.</p>
+              <p class="project-desc">Juego web corporativo.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>HTML5</li><li>jQuery Mobile</li><li>JavaScript</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>Web</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+        <li class="project" data-type="juego">
+          <p class="project-year"><time datetime="2016">2016</time></p>
+          <article class="project-card">
+            <img class="project-thumb" src="img/projects/contac-aliens.png" alt="Personaje alienígena de Contac Aliens" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <span class="project-type">Videojuego</span>
+              <h3>Contac Aliens</h3>
+              <p class="project-client">Proyecto personal colaborativo</p>
+              <p class="project-desc">Juego multiplataforma.</p>
+              <dl class="project-meta">
+                <div><dt>Stack</dt><dd><ul class="chips"><li>HTML5</li><li>Flash</li><li>Java</li></ul></dd></div>
+                <div><dt>OS</dt><dd><ul class="chips"><li>Android</li><li>iOS</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+        </li>
+      </ol>
     </section>
 
     <section class="section" id="premios" aria-labelledby="premios-titulo">
