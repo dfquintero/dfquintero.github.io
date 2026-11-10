@@ -1,336 +1,193 @@
-﻿<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-
-<title>Homepage</title>
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
-
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
-
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
-<link href="magnific-popup.css" rel="stylesheet" type="text/css">
-
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
-
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
-
-
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <title>Diego Quintero — Ingeniería de Sistemas</title>
+  <meta name="description" content="Diego Quintero, estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia. Ciberseguridad, desarrollo de software e IoT.">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-<div style="overflow:hidden;">
-    <header class="header" id="header">
-        <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo.png" alt=""></a>
-            </figure>
-            <h1 class="animated fadeInDown delay-07s">Bienvenido a HappyByte</h1>
-            <ul class="we-create animated fadeInUp delay-1s">
-                <li>Software Solutions</li>
-            </ul>
-            <a class="link animated fadeInUp delay-1s" href="#service">vamos</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a class="nav-brand" href="#inicio">DQ</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#premios">Premios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <img class="hero-photo" src="img/profile-placeholder.svg" alt="Foto de Diego Quintero" width="200" height="200">
+        <div>
+          <p class="hero-kicker">Hola, soy</p>
+          <h1>Diego Quintero</h1>
+          <p class="hero-role">Estudiante de Ingeniería de Sistemas — Universidad Nacional de Colombia</p>
+          <ul class="tags" aria-label="Intereses">
+            <li>Ciberseguridad</li>
+            <li>Desarrollo de software</li>
+            <li>IoT</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Contacto</a>
+            <a class="btn" href="#proyectos">Ver proyectos</a>
+          </div>
         </div>
-    </header>
-</div>
+      </div>
+    </section>
 
+    <section class="section" id="experiencia" aria-labelledby="experiencia-titulo">
+      <div class="container">
+        <h2 id="experiencia-titulo">Experiencia</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <h3>Cargo</h3>
+            <p class="meta">Organización · Año – Año</p>
+            <p>Descripción breve de responsabilidades y logros.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
+    <section class="section section-alt" id="educacion" aria-labelledby="educacion-titulo">
+      <div class="container">
+        <h2 id="educacion-titulo">Educación</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <h3>Ingeniería de Sistemas y Computación</h3>
+            <p class="meta">Universidad Nacional de Colombia · En curso</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-<nav class="main-nav-outer" id="test" style="background-color:#ffe119; border:none"><!--main-nav-start-->
-	<div class="container">
-        <ul class="main-nav">
-        	<li><a href="#header">Home</a></li>
-            <li><a href="#service">Servicios</a></li>
-            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
+    <section class="section" id="cursos" aria-labelledby="cursos-titulo">
+      <div class="container">
+        <h2 id="cursos-titulo">Cursos y certificaciones</h2>
+        <ul class="card-list">
+          <li class="card">
+            <h3>Nombre del curso o certificación</h3>
+            <p class="meta">Entidad emisora · Año</p>
+          </li>
         </ul>
-        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
-    </div>
-</nav><!--main-nav-end-->
+      </div>
+    </section>
 
-
-
-<section class="main-section" id="service"><!--main-section-start-->
-	<div class="container">
-    	<h2>Servicios</h2>
-    	<h6>Ofrecemos varios servicios que seran de su ayuda</h6>
-        <div class="row">
-        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-            	<div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-paw"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>branding &amp; identity</h3>
-                        <p>Sabemos que llevar a las empresas de lo real al mundo virtual requiere esfuerzo. Confié en nosotros para gestionar la comunicación con sus clientes a través de los medios digitales.</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-gear"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>Desarrollo web </h3>
-                        <p>Brindamos soluciones de desarrollo y diseño de páginas web ayudando a las necesidades de nuestros clientes.</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-apple"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>Desarrollo movil</h3>
-                        <p>Desarrollamos  Apps  móviles para diferentes plataformas, mejorando la imagen corporativa de su empresa, aumentando la base de nuevos clientes.</p>
-                    </div>
-                </div>
-                <!--div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-medkit"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>24/7 Support</h3>
-                        <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
-                    </div>
-                </div-->
+    <section class="section section-alt" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="container">
+        <h2 id="proyectos-titulo">Proyectos</h2>
+        <!--
+          Para agregar un proyecto, copia un <li class="project"> y ajusta:
+          imagen en img/projects/ (360x270), título, descripción y etiquetas.
+        -->
+        <ul class="projects">
+          <li class="project">
+            <img src="img/projects/san-mate.png" alt="Logo de San Mate" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <h3>San Mate</h3>
+              <p>Branding y diseño web.</p>
+              <ul class="tags tags-sm"><li>Web</li><li>Branding</li></ul>
             </div>
-            <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-            	<img src="img/macbook-pro.png" alt="">
-            </figure>
-        
-        </div>
-	</div>
-</section><!--main-section-end-->
-
-
-
-<section class="main-section alabaster"><!--main-section alabaster-start-->
-	<div class="container">
-    	<div class="row">
-			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-            	<img  src="img/iphone.png" alt="">
-            </figure>
-        	<div class="col-lg-7 col-sm-8 featured-work">
-            	<h2>Desarrollo a la medida</h2>
-            	<P class="padding-b">Como en las mejores sastrerias.</P>
-            	<div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-02s">
-                    	<i class="fa-magic"></i>
-                    </div>	
-                	<div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>La Magia del desarrollo </h3>
-                        <!--<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>-->
-                    </div>    
-                </div>
-                <div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-04s">
-                    	<i class="fa-gift"></i>
-                    </div>	
-                	<div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>Siempre algo nuevo</h3>
-                        <!--<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>-->
-                    </div>    
-                </div>
-                <div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-06s">
-                    	<i class="fa-dashboard"></i>
-                    </div>	
-                	<div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>Optimización SEO</h3>
-                        <!--<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>-->
-                    </div>    
-                </div>
-                <a class="Learn-More" href="#">Learn More</a>
+          </li>
+          <li class="project">
+            <img src="img/projects/si-joven.png" alt="Logo de la app Sí Joven" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <h3>Sí Joven App</h3>
+              <p>Aplicación móvil para MinTIC y el programa Colombia Joven de la Presidencia de la República.</p>
+              <ul class="tags tags-sm"><li>Móvil</li></ul>
             </div>
-        </div>
-	</div>
-</section><!--main-section alabaster-end-->
-
-
-
-<section class="main-section paddind" id="Portfolio"><!--main-section-start-->
-	<div class="container">
-    	<h2>Nuestro Trabajo</h2>
-      <div class="portfolioFilter">  
-        <ul class="Portfolio-nav wow fadeIn delay-02s">
-        	<li><a href="#" data-filter="*" class="current" >Todo</a></li>
-            <li><a href="#" data-filter=".branding" >Mobile</a></li>
-            <li><a href="#" data-filter=".webdesign" >Web Development</a></li>
-            <li><a href="#" data-filter=".printdesign" >Branding</a></li>
-            <li><a href="#" data-filter=".photography" >Juegos</a></li>
+          </li>
+          <li class="project">
+            <img src="img/projects/world-qup.png" alt="Ícono de World Qup" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <h3>World Qup</h3>
+              <p>App de resultados de la Copa Mundial de la FIFA.</p>
+              <ul class="tags tags-sm"><li>Móvil</li></ul>
+            </div>
+          </li>
+          <li class="project">
+            <img src="img/projects/siplaft.png" alt="Escudo de SIPLAFT y personaje del juego" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <h3>SIPLAFT | El Juego</h3>
+              <p>Juego web corporativo.</p>
+              <ul class="tags tags-sm"><li>Web</li><li>Juego</li></ul>
+            </div>
+          </li>
+          <li class="project">
+            <img src="img/projects/contac-aliens.png" alt="Personaje alienígena de Contac Aliens" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <h3>Contac Aliens</h3>
+              <p>Juego multiplataforma.</p>
+              <ul class="tags tags-sm"><li>Móvil</li><li>Juego</li></ul>
+            </div>
+          </li>
+          <li class="project">
+            <img src="img/projects/blackberry.png" alt="Apps publicadas en BlackBerry App World" width="360" height="270" loading="lazy">
+            <div class="project-body">
+              <h3>Apps BlackBerry</h3>
+              <p>Desarrollo de aplicaciones móviles para BlackBerry App World.</p>
+              <ul class="tags tags-sm"><li>Móvil</li></ul>
+            </div>
+          </li>
         </ul>
-       </div> 
-        
-	</div>
-    <div class="portfolioContainer wow fadeInUp delay-04s">
-                <div class="zoom-galler">
-                <div class="Portfolio-box webdesign">
-                	<a href="img/Portfolio-pic1.jpg"><img src="img/Portfolio-pic1.jpg" alt=""></a>	
-                	<h3>San Mate</h3>
-                    <p>Branding - Web Design</p>
-                </div>
-                </div> 
-                <div class="zoom-galler1 Portfolio-box webdesign">  
-                <div class="Portfolio-box webdesign">
-                	<a href="img/Portfolio-pic2.jpg"><img src="img/Portfolio-pic2.jpg" alt=""></a>	
-                	<h3>Sí Joven App</h3>
-                    <p>MinTIC - Presidencia de la Republica</p>
-                </div>
-                </div> 
-                <div class="zoom-galler2 Portfolio-box branding">
-                <div class=" Portfolio-box branding">
-                	<a href="img/Portfolio-pic3.jpg"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>World Qup</h3>
-                    <p>App Resultados FIFA WorldCup</p>
-                </div>
-                </div>
-                <div class="zoom-galler3 Portfolio-box photography">
-                <div class=" Portfolio-box photography" >
-                	<a href="img/Portfolio-pic4.jpg"><img src="img/Portfolio-pic4.jpg" alt=""></a>	
-                	<h3>SIPLAFT | El Juego</h3>
-                    <p>Juego Web Corporativo</p>
-                </div>
-                </div>
-                <div class="zoom-galler4 Portfolio-box branding">
-                <div class=" Portfolio-box branding">
-                	<a href="img/Portfolio-pic5.jpg"><img src="img/Portfolio-pic5.jpg" alt=""></a>	
-                	<h3>Contac Aliens</h3>
-                    <p>Juego Multiplataforma</p>
-                </div>
-                </div>
-                <div class="zoom-galler5 Portfolio-box photography">
-                <div class=" Portfolio-box photography">
-                	<a href="img/Portfolio-pic6.jpg"><img src="img/Portfolio-pic6.jpg" alt=""></a>	
-                	<h3>Apps Blackberry</h3>
-                    <p>Desarrollo Móvil</p>
-                </div>
-                </div>
-    </div>
-</section><!--main-section-end-->
+      </div>
+    </section>
 
+    <section class="section" id="premios" aria-labelledby="premios-titulo">
+      <div class="container">
+        <h2 id="premios-titulo">Premios</h2>
+        <ul class="card-list">
+          <li class="card">
+            <h3>Nombre del premio o reconocimiento</h3>
+            <p class="meta">Entidad · Año</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="section section-alt" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container contact">
+        <h2 id="contacto-titulo">Contacto</h2>
+        <p>¿Quieres hablar de un proyecto o una oportunidad? Escríbeme.</p>
+        <ul class="contact-links">
+          <li>
+            <a class="btn btn-primary" href="mailto:dfquintero1@gmail.com">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.4V17h16V7.4zM5.2 7l6.8 4 6.8-4z"/></svg>
+              Correo
+            </a>
+          </li>
+          <li>
+            <a class="btn" href="https://www.linkedin.com/in/dfquintero" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.96c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62V21h-4z"/></svg>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-<div class="c-logo-part"><!--c-logo-part-start-->
-	<div class="container">
-    	<ul>
-        	<li><a href="#"><img src="img/c-liogo1.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo5.png" alt=""></a></li>
-    	</ul>
-	</div>
-</div><!--c-logo-part-end-->
-
-
-
-
-<section class="business-talking"><!--business-talking-start-->
-	<div class="container">
-        <h2>Hablemos de Negocios.</h2>
-    </div>
-</section><!--business-talking-end-->
-<div class="container">
-<section class="main-section contact" id="contact">
-	
-        <div class="row">
-        	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
-            	<div class="contact-info-box address clearfix">
-                	<h3><i class=" icon-map-marker"></i>Dirección:</h3>
-                	<span>Bogotá<br>Colombia</span>
-                </div>
-                <div class="contact-info-box phone clearfix">
-                	<h3><i class="fa-phone"></i>Cel:</h3>
-                	<span>(57) 3114498479</span>
-                </div>
-                <div class="contact-info-box email clearfix">
-                	<h3><i class="fa-pencil"></i>email:</h3>
-                	<span>contacto@happybyte.co</span>
-                </div>
-            	<div class="contact-info-box hours clearfix">
-                	<h3><i class="fa-clock-o"></i>Hours:</h3>
-                	<span><strong>Lunes:</strong>¿La gente aún trabaja los lunes?<br><strong>Martes - Viernes</strong> 8am - 7pm<br><strong>Sabados - Domingos:</strong> Mejor no preguntes</span>
-                </div>
-                <ul class="social-link">
-                	<li class="twitter"><a href="http://www.twitter.com/happybyteco"><i class="fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="http://www.facebook.com/happybyteco"><i class="fa-facebook"></i></a></li>
-                </ul>
-            </div>
-        	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-            <form class="form" method="post">
-                
-                    <div><input class="input-text nombre" type="text" name="nombre" value="Tu Nombre *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" /></div>
-                    <div><input class="input-text mail" type="text"  name="mail" value="Tu E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/></div>
-                    <div><textarea class="input-text text-area" cols="0" rows="0" name="mensaje" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Tu Mensaje *</textarea></div>
-                    <div class="ultimo">
-                        <img src="ajax.gif" class="ajaxgif hide" />
-                        <div class="msg"></div>
-                        <input class="input-btn" type="submit" value="Enviar">
-                    </div>
-                
-             </form>  
-            </div>
-        </div>
-</section>
-</div>
-<footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-        <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Copyright © 2015 | Designed by <a href="http://happybyte.co">HappyByteCo</a>.</span>
+      <p>© <span id="year">2026</span> Diego Quintero</p>
     </div>
-    <!-- 
-        All links in the footer should remain intact. 
-        Licenseing information is available at: http://bootstraptaste.com/license/
-        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Knight
-    -->
-</footer>
-
-<!--
-<div class="zoom-galler" style="display:none;">
-    
-
-    Width/height ratio of thumbnail and the main image must match to avoid glitches.
-
-    If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable.
-
-     
-    <a href="http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg" data-source="http://500px.com/photo/32736307" title="Into The Blue" style="width:193px;height:125px;">
-        <img src="http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg" width="193" height="125">
-    </a>
-    <a href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg" data-source="http://500px.com/photo/32554131" title="Light Sabre" style="width:82px;height:125px;">
-        <img src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg" width="82px" height="125">
-    </a>
-
-</div>
--->
-<script src="js/test.js"></script>
-<script src="js/script.js"></script>
-<script src="js/main-nav.js"></script>
-<script src="js/portfolioContainer.js"></script>
-<!-- Magnific Popup core JS file -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/popup.js"></script>
-<script type="text/javascript" src="js/funciones.js"></script>
-
+  </footer>
 </body>
 </html>
